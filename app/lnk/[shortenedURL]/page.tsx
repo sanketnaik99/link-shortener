@@ -3,6 +3,8 @@
 import { redirect, useRouter } from "next/navigation";
 import { useEffect } from "react";
 
+export const runtime = "edge";
+
 function RedirectPage({ params }: { params: { shortenedURL: string } }) {
   const { shortenedURL } = params;
   const isWindowDefined = typeof window !== "undefined";
