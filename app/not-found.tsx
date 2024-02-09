@@ -17,8 +17,8 @@ export default function Component() {
               Page Not Found
             </h1>
             <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Oops! It looks like you've hit a dead end. The link you are trying
-              to access may be expired or invalid.
+              Oops! It looks like you&apos;ve hit a dead end. The link you are
+              trying to access may be expired or invalid.
             </p>
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row">
