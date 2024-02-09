@@ -1,3 +1,3 @@
 export const KV_BINDINGS: Record<string, string> = {
-  URLS_KV: "1425b3880eaf47c2b7d0f82a68092f93",
+  URLS_KV: "d7a1fa27bccb4f4bb3bff3f1704fb9be",
 };

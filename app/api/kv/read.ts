@@ -28,12 +28,16 @@ export const readKV = async ({
       {
         headers: {
           Authorization: `Bearer ${process.env.CLOUDFLARE_AUTH_TOKEN}`,
+          "Content-Type": "application/json",
         },
       },
     )
-      .then((res) => res.json())
+      .then((res) => {
+        console.log("res", res.json());
+        return res.json();
+      })
       .catch((err) => {
-        console.error(err);
+        console.error("Read ERROR: ", err);
         return null;
       });
     if (response?.errors) {
