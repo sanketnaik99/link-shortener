@@ -15,7 +15,7 @@ function RedirectPage({ params }: { params: { shortenedURL: string } }) {
       .then((res) => res.json())
       .catch((err) => console.error(err));
     if (data && data.url) {
-      window.location.href = data.url;
+      window.location.replace(data.url);
     } else {
       router.push("/404");
     }

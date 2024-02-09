@@ -35,7 +35,7 @@ export const writeKV = async ({
         "Content-Type": "application/json",
         Authorization: `Bearer ${process.env.CLOUDFLARE_AUTH_TOKEN}`,
       },
-      body: JSON.stringify(value),
+      body: value,
     };
     const response = await fetch(url, options)
       .then((response) => response.json())
