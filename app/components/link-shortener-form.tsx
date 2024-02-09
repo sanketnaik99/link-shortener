@@ -130,7 +130,9 @@ export const LinkShortenerForm = () => {
                     className="w-full cursor-pointer rounded-md bg-gray-200 p-3"
                     onClick={() => copyToClipboard()}
                   >
-                    {window.location + "lnk/" + shortenedURL}
+                    {typeof window !== "undefined"
+                      ? window.location + "lnk/" + shortenedURL
+                      : shortenedURL}
                   </p>
                   <Button
                     variant="outline"
